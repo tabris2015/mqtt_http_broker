@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      PORT: "8000"
+      K_SERVICE: "mqtt_broker"
+      K_CONFIGURATION: "local"
+      K_REVISION: "local"
